@@ -1,0 +1,3 @@
+# Da Bao Restaurant
+
+Initializing repository...
