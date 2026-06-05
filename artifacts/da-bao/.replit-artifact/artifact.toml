@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Da Bao Restaurant"
+version = "1.0.0"
+id = "artifacts/da-bao"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23694
+
+[services.development]
+run = "pnpm --filter @workspace/da-bao run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/da-bao", "run", "build" ]
+publicDir = "artifacts/da-bao/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23694"
+BASE_PATH = "/"
