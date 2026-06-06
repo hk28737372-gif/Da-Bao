@@ -14,7 +14,7 @@ export default function Home() {
         <section className="relative h-[90vh] min-h-[600px] flex items-center pt-20">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/images/hero-bg.png" 
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1600" 
               alt="Da Bao Interior" 
               className="w-full h-full object-cover opacity-60"
             />
